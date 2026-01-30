@@ -16,6 +16,11 @@ from app.main import check_password
             id="Digit check"
         ),
         pytest.param(
+            "ThisIs@VeryLong1Password",  # більше 16 символів
+            False,
+            id="Check max length"
+        ),
+        pytest.param(
             "Number33",
             False,
             id="Special character check"
