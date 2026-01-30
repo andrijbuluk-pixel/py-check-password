@@ -11,7 +11,7 @@ from app.main import check_password
             id="Minimum length check"
         ),
         pytest.param(
-            "Numb$r33",
+            "NoNumber$",
             False,
             id="Digit check"
         ),
